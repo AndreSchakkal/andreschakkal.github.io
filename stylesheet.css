@@ -99,6 +99,7 @@ h2 {
   font-weight: normal;
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: 700;
 }
 
 .papertitle {
@@ -112,7 +113,7 @@ h2 {
   margin: 0;
   font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
   font-size: 38px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .one {
