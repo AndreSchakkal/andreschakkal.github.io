@@ -145,3 +145,9 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+pageheading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
