@@ -142,7 +142,10 @@
         <a href="https://ieeexplore.ieee.org/document/11071941">paper</a>
         <p></p>
         <p>
-			Summary
+			This work introduces a data-driven framework for modeling and planning impulsive object manipulation—where robots move objects by hitting rather than pushing or grasping. Using a dual-arm “air-hockey” setup,
+			the system autonomously collects data as two robot arms exchange impacts on an object. An Impact-Aware Extended Kalman Filter (IA-EKF) predicts post-impact motion online, while a Gaussian Mixture Model (GMM)
+			learns the stochastic relationship between hitting force and object displacement. The learned model enables robots to plan sequential, golf-like hits to move objects beyond their individual reach, demonstrating
+			collaborative long-range object placement.
         </p>
       </td>
     </tr>
@@ -191,7 +194,8 @@
     </tr>
 
 
-    <tr onmouseout="synergizing_stop()" onmouseover="synergizing_start()" bgcolor="#ffffd0">
+    <!-- <tr onmouseout="synergizing_stop()" onmouseover="synergizing_start()" bgcolor="#ffffd0"> --> for yellow
+    <tr onmouseout="synergizing_stop()" onmouseover="synergizing_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='synergizing_image'><video  width=100% height=100% muted autoplay loop>
@@ -233,6 +237,61 @@
     </tr>
           </tbody></table>
 
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+			  
+<tr onmouseout="longhorizon_stop()" onmouseover="longhorizon_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='longhorizon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/longhorizon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/longhorizon.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function longhorizon_start() {
+            document.getElementById('longhorizon_image').style.opacity = "1";
+          }
+
+          function longhorizon_stop() {
+            document.getElementById('longhorizon_image').style.opacity = "0";
+          }
+          longhorizon_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <strong>
+			Humanoid Teleoperation
+        </strong>
+        <br>
+		<strong>André Schakkal</strong>,
+        <a href="https://benzandonati.co.uk/">Ben Zandonati</a>,
+        <a href="https://zt-yang.com/">Zhutian Yang</a>,
+        <a href="https://azizan.mit.edu/">Navid Azizan</a>
+        <br>
+        <em>2025 Robotics: Science and Systems Conference (RSS) Workshop on Robot Planning in the Era of Foundation Models</em>, 2025
+        <br>
+        <a href="https://vlp-humanoid.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2506.22827">paper</a>
+        <p></p>
+        <p>
+		This work introduces a hierarchical framework for multi-step humanoid manipulation. The system integrates three layers: (1) a low-level RL controller that 
+		tracks whole-body motion targets; (2) a mid-level set of skill policies trained via imitation learning that produce motion targets for different steps of a task; and 
+		(3) a high-level vision-language module that selects and monitors skills using pretrained VLMs.        
+		</p>
+      </td>
+    </tr>			
+
+			
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
