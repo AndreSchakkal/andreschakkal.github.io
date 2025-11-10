@@ -116,11 +116,28 @@ h2 {
   /* font-weight: 700; */
 }
 
-.one {
+/* .one {
   width: 160px;
   height: 160px;
   position: relative;
+} */
+.one {
+  position: relative;
+  width: 160px;
+  margin: 0 auto; /* center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.one img,
+.one video {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
 
 .two {
   width: 160px;
